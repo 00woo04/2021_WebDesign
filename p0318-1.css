@@ -1,0 +1,37 @@
+/* reset */
+* {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+a {text-decoration: none; color: #333;}
+li {list-style: none;}
+table {border-spacing: 0;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#wrap {width: 1200px; margin: 0px auto;}
+
+/* header */
+#header {text-align: center;}
+#header .logo {float: left; width: 250px; height: 100px; line-height: 100px; background: #111;} 
+#header .nav {float: left; width: 950px; height: 100px; line-height: 100px; background: #222;}
+
+/* banner */
+#banner {text-align: center; width: 1200px; height: 400px; margin: 0 auto; position: relative; overflow: hidden;}
+#banner img {width: 100%; display: block;}
+#banner h2 {position: absolute; background: rgba(255, 255, 255, 0.5); left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 10px 30px; border-radius: 25px; z-index: 10;}
+
+/* slider */
+.slideList {position: absolute;}
+.slideList > div {position: relative; left: 0; top: 0;}
+.slideList > div img {width: 100%;}
+.slideImg {width: 1200px; height: 400px; position: relative; left: 0; top: 0;}
+
+/* contents */
+#contents {text-align: center;}
+#contents > div {float: left; width: 33.333333%; height: 350px; line-height: 350px;}
+#contents > div.cont1 {background: #333;}
+#contents > div.cont2 {background: #444;}
+#contents > div.cont3 {background: #555;}
+
+/* footer */
+#footer {text-align: center;}
+#footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; background: #666;}
+#footer .foot2 {float: left; width: 800px; height: 100px; line-height: 100px; background: #777;}
+#footer .foot3 {float: left; width: 200px; height: 100px; line-height: 100px; background: #888;}
