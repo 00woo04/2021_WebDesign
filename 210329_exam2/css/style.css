@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin: 0; padding: 0; font-size: 24px; font-family: "맑은 고딕"; font-weight: bold; color: #111111;}
+a {text-decoration: none;}
+li {list-style: none;}
+table {border-spacing: 0;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+/* reset */
+
+#wrap {width: 960px; margin: 0px auto;}
+
+#header {text-align: center; height: 150px; line-height: 150px;}
+#header .logo>a>img {float: left; width: 200px; height: 150px;}
+#header .menu {float: right; width: 760px;}
+#header .menu li {position: relative; float: left; width: 33.33333%; text-align: center;}
+#header .menu li a {display: block; font-size: 20px; color: #111111;}
+#header .menu li a:hover {background-color: rgba(0, 0, 0, 0.4);}
+#header .menu li ul.submenu {display: none; position: absolute; left: 0; top: 44px; background: #333333;}
+#header .menu li ul.submenu li {width: 100%; border-right: 0;}
+#header .menu li ul.submenu li a:hover {background-color: rgba(0, 0, 0, 0.4);}
+
+#banner {width: 960px; height: 400px; overflow: hidden;}
+#banner img {width: 100%;}
+.slideList {position: relative;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -250%);
+    background: rgba(150 ,150, 150, 1.5); padding: 10PX 30PX; border-radius: 25PX; color: #900;}
+.slideList .slideImg img {display: block;}
+
+#content1 {text-align: center;}
+#content1 > div {float: left; width: 50%; height: 220px; line-height: 220px;}
+#content1 > div.cont1-a {background: #7e57c2;}
+#content1 > div.cont1-b {background: #673ab7;}
+
+#content2 {text-align: center;}
+#content2 > div {float: left; width: 100%; height: 100px; line-height: 100px;}
+#content2 > div.cont2-a {background: #7e57c2;}
+
+#content3 {text-align: center;}
+#content3 > div {float: left; width: 33.333333%; height: 180px; line-height: 180px;}
+#content3 > div.cont3-a {background: #7e57c2;}
+#content3 > div.cont3-b {background: #673ab7;}
+#content3 > div.cont3-c {background: #5e35b1;}
+
+#footer {height: 150px; line-height: 150px; text-align: center; }
+#footer .foot1 {float: left; width: 960px; background: #5e35b1;}
