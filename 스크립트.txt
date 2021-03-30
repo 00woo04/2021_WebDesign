@@ -1,0 +1,83 @@
+<메뉴>
+ $(".ul > li").mouseover(function(){
+        $(this).find(".submenu").stop().slideDown(200);
+});
+$(".ul > li").mouseout(function(){
+        $(this).find(".submenu").stop().slideUp(200);
+});
+
+
+<위아래로 움직이는 이미지 슬라이드>
+ var currentIndex = 0;
+
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            var slidePosition = currentIndex * (-360)+"px";
+
+            $(".slideList").animate({ top: slidePosition},400);
+        },3000);
+
+
+<옆으로 움직이는 이미지 슬라이드>
+start();
+    var imgs=2;
+    var now=0;
+
+    function start(){
+        $(".imgs>img").eq(0).siblings().css({"margin-left":"-2000px"});
+            setInterval(function(){slide();},2000);
+    }
+
+    function slide(){
+        now=now==imgs?0:now+=1;
+        $(".imgs>img").eq(now-1).css({"margin-left":"-2000px"});
+        $(".imgs>img").eq(now).css({"margin-left":"0px"});
+    }
+
+
+<공지사항>
+$(document).ready(function(){
+    var tabBtn = $(".tab-btn > ul > li");
+    var tabCont = $(".tab-cont > div");
+
+    tabCont.hide().eq(0).show();
+
+    tabBtn.click(function(e){
+        e.preventDefault();
+        var target = $(this);
+        var index = target.index();
+        tabBtn.removeClass("active");
+        target.addClass("active");
+        tabCont.css("display","none");
+        tabCont.eq(index).css("display","block");
+    });
+});
+
+
+<레이어 팝업>
+$(".layerPopup").click(function(e){
+           e.preventDefault();
+           $(".layer").show();
+       }); 
+       $(".layer .close").click(function(e){
+           e.preventDefault();
+           $(".layer").hide();
+       });
+
+
+<팝업창>
+var win;
+function winOpen(){
+    win=window.open('contact.html','child','toolbar=no, location=no, 
+status=no , menubar=no , resizable=no, scrollbars=no, width=500, height=300')
+};
+
+
+<스크립트 시작할 때>
+jQuery(documet).ready(function(){
+
+});
