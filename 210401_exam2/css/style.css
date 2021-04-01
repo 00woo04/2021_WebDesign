@@ -1,0 +1,60 @@
+* {margin: 0; padding: 0; font-size: 24px; color: #fff; font-family: "맑은 고딕";}
+a {text-decoration: none; color: #333;}
+li {list-style: none;}
+table {border-spacing: 0;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#wrap {width: 1200px; margin: 0px auto;}
+
+#header {text-align: center;}
+#header .logo {float: left; width: 250px; height: 100px; line-height: 100px;}
+#header .nav {float: right;  width: 600px; margin-top: 28px; background: #333333;}
+#header .nav li {position: relative; float: left; width: 25%; text-align: center;}
+#header .nav li a {padding: 10px; display: block; font-size: 20px; color: #fff;}
+#header .nav li a:hover {background: rgba(0, 0, 0, 0.4);}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 44px;
+    background: #444444; z-index: 1;}
+#header .nav li ul.submenu li {width: 100%; border-right: 0;} 
+#header .nav li ul.submenu li a:hover {background: rgba(0, 0, 0, 0.4);}
+
+#banner {width: 1200px; height: 378px; overflow: hidden;}
+#banner img {width:1200px; height: 376px;}
+.slideList {position: relative;}
+.slideList .slideImg {position: relative;  margin-top: -2px;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); padding: 10px 30px; border-radius: 25px; color: #fff;}
+
+#contents {text-align: center;}
+#contents > div {float: left;}
+#contents > div.cont1 {width: 470px; height: 180px; margin-left: -10px; margin-bottom: 10px}
+#contents > div.cont2 {width: 350px; background: #777777; height: 180px; line-height: 180px; 
+    margin-top: 10px; margin-left: 5px; margin-bottom: 10px}
+#contents > div.cont3 {float: right; width: 370px; background: #888888; height: 180px; line-height: 180px; 
+    margin-top: 10px; margin-left: 5px; margin-bottom: 10px;}
+
+.tab-menu {padding: 10px;}
+.tab-menu .tab-btn ul {overflow: hidden;}
+.tab-menu .tab-btn li {float: left; width: 160px; 
+    text-align: center; margin-right: -1px;}
+.tab-menu .tab-btn li a {font-size: 0.9em; padding: 10px; display: block; color: #000; 
+    background-color: #999999;}
+.tab-menu .tab-btn li a:hover {background-color: #888888;}
+.tab-menu .tab-cont {background-color: #999999; height: 130px; text-align: center;}
+.tab-menu .tab-cont .active {background-color: #999999; height: 130px; text-align: left;}
+.tab-menu .tab-cont .active1:hover {text-decoration: underline;}
+.tab-menu .tab-cont .active2:hover {text-decoration: underline;}
+.tab-menu .tab-cont .active3:hover {text-decoration: underline;}
+.tab-menu .tab-cont .active4:hover {text-decoration: underline;}
+.tab-menu .tab-cont img {margin-top: 15px;}
+.tab-menu .tab-cont a span {color: #222;}
+.tab-menu .tab-cont a {font-size: 0.9em;}
+
+#footer {height: 100px; line-height: 100px; text-align: center;}
+#footer .foot1 {float: left;  text-align: center; width: 200px; background-color: #0066ad;}
+#footer .foot2 {float: left; width: 800px; background-color: #0066ad;}
+#footer .foot3 {float: left; width: 200px; background-color: #0066ad;}
+
+.layer {display: none; position: absolute; left: 50%; top: 50%; width: 500px; height: 500px;
+    background: #fff; border: 2px solid #000; margin-left: -250px; margin-top: -250px; z-index: 1000;}
+.layer h2 {padding: 20px; color: #000;}
+.layer .close {position: absolute; bottom: 20px; right: 20px;}    
