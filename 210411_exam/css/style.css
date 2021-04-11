@@ -6,11 +6,11 @@ table {border-spacing: 0;}
 
 #wrap {width: 1200px; margin: 0px auto;}
 
-#header {text-align: center; background: #111111;}
+#header {text-align: center;}
 #header .logo {float: left; width: 250px; height: 100px; line-height: 100px; 
     background: #222222;}
-#header .nav {float: right;  width: 600px; margin-top: 28px; background: #333333;}
-#header .nav li {position: relative; float: left; width: 33.333333%; text-align: center;}
+#header .nav {float: right;  width: 900px; margin-top: 28px; background: #333333;}
+#header .nav li {position: relative; float: left; width: 20%; text-align: center;}
 #header .nav li a {padding: 10px; display: block; font-size: 20px; color: #fff;}
 #header .nav li a:hover {background: rgba(0, 0, 0, 0.4);}
 #header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 44px;
@@ -18,18 +18,20 @@ table {border-spacing: 0;}
 #header .nav li ul.submenu li {width: 100%; border-right: 0;} 
 #header .nav li ul.submenu li a:hover {background: rgba(0, 0, 0, 0.4);}
 
-#banner {width: 1200px; height: 378px; overflow: hidden;}
-#banner img {width:1200px; height: 376px;}
+#banner {width: 1200px; height: 500px; overflow: hidden;}
+#banner img {width:100%; height: 500px;}
 .slideList {position: relative;}
 .slideList .slideImg {position: relative;  margin-top: -2px;}
 .slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.5); padding: 10px 30px; border-radius: 25px; color: #fff;}
 
 #contents {text-align: center;}
-#contents > div {float: left; width: 33.3333%;}
-#contents > div.cont1 {background: #666666; height: 247px;}
-#contents > div.cont2 {background: #777777; height: 247px; line-height: 247px;}
-#contents > div.cont3 {background: #888888; height: 247px; line-height: 247px;}
+#contents > div {float: left;}
+#contents > div.cont1 {float: left; height: 247px; width: 500px;}
+#contents > div.cont2 {float: left; background: #777777; height: 247px; line-height: 247px;  width: 330px; margin-bottom: 5px;}
+#contents > div.cont2 img {height: 247px; width: 360px;}
+#contents > div.cont3 {float: right; background: #888888; height: 247px; line-height: 247px;  width: 330px; margin-bottom: 5px;}
+#contents > div.cont3 img {height: 247px; width: 330px;}
 
 .tab-menu {padding: 10px;}
 .tab-menu .tab-btn ul {overflow: hidden;}
@@ -38,13 +40,17 @@ table {border-spacing: 0;}
 .tab-menu .tab-btn li.active {text-decoration: underline;}
 .tab-menu .tab-btn li a {padding: 10px; display: block; color: #fff;}
 .tab-menu .tab-cont {padding: 20px; background: #666666; text-align: left;}
+.tab-menu .tab-cont > div {font-size: 19px;}
 
-#footer {height: 100px; line-height: 100px; text-align: center;}
-#footer .foot1 {float: left; width: 200px; background: #999999;}
-#footer .foot2 {float: left; width: 800px; background: #333333;}
-#footer .foot3 {float: left; width: 200px; background: #444444;}
+#footer {text-align: center;}
+#footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; }
+#footer .foot2 {float: left; width: 780px; background: #333333; height: 100px; margin-right: 10px;}
+#footer .foot2 > pre {font-size: 15px;margin-top: 30px;}
+#footer .foot3 {float: left; width: 210px; background: #444444; height: 100px; line-height: 100px; }
+#footer .foot3 a {color: #fff;}
 
 .layer {display: none; position: absolute; left: 50%; top: 50%; width: 500px; height: 500px;
     background: #fff; border: 2px solid #000; margin-left: -250px; margin-top: -250px; z-index: 1000;}
 .layer h2 {padding: 20px; color: #000;}
+.layer > div {padding: 20px; color: #000;}
 .layer .close {position: absolute; bottom: 20px; right: 20px;}    

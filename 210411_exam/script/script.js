@@ -5,6 +5,13 @@ $(".ul > li").mouseout(function(){
     $(this).find(".submenu").stop().slideUp(200);
 });
 
+$(".ul > li > .submenu > li").mouseover(function(){
+  $(this).find(".submenu2").stop().slideDown(200);
+});
+$(".ul > li > .submenu > li").mouseout(function(){
+  $(this).find(".submenu2").stop().slideUp(200);
+});
+
 
 var currentIndex = 0;
 setInterval(function(){
@@ -13,7 +20,7 @@ setInterval(function(){
     } else {
         currentIndex = 0;
     }
-    var slidePosition = currentIndex * (-378)+"px";
+    var slidePosition = currentIndex * (-504)+"px";
     $(".slideList").animate({top:slidePosition},400);    
 },3000);
 
