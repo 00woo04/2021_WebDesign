@@ -78,3 +78,66 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.btn-login {
+    margin-top: 10px;
+    background-color: #03cf5d;
+    color: #fff;
+    font-weight: 700;
+    border: 0;
+    padding: 16px 0;
+}
+.login-state {
+    position: relative;
+}
+.login-state label {
+    display: flex;
+    align-items: center;
+}
+.login-state .icon-check {
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/icon-unchecked.svg);
+    background-size: cover;
+    margin-right: 5px;
+    cursor: pointer;
+}
+[name="state"],
+[name="ip"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    z-index: 100;
+}
+
+[name="state"]:checked + label .icon-check {
+    background-image: url(/images/icon-checked.svg);
+}
+
+[name="ip"] + label::after {
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    margin-left: 5px;
+    text-align: right;
+    content: "OFF";
+    color: #767676;
+}
+[name="ip"]:checked + label::after {
+    content: "ON";
+    color: #03cf5d;
+}
+:focus {
+    outline: 0;
+}
+.btn-login:focus-visible,
+[name="state"]:focus-visible + label span,
+[name="ip"]:focus-visible + label::after {
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px #24388d;
+}
