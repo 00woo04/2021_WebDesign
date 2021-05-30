@@ -1,0 +1,14 @@
+@keyframes slide {
+    0% { margin-left: 0; }
+    10% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    35% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    60% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    85% { margin-left: -300%; }
+    100% { margin-left: 0; }
+}
+@keyframes animationname {keyframes-selector {css-styles;}}
+animation: name duration timing-function delay iteration-count
+direction fill-mode play-state;
