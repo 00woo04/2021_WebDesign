@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Layer Popup Bootstrap</title>
+    <link rel="stylesheet" href="/layerpopup-bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <h2>Layer Popup Bootstrap</h2>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open modal</button>
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">[학습목표</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            소프트웨어 아키텍처 세부 구현 지침과 UI 표준 및 지침을 반영하여,<br/>
+                            확인된 UI 설계를 구현할 수 있다.<br/>
+                            레이어 팝업을 CSS로 구현할 수 있다.<br/>
+                            레이어 팝업을 JavaScript로 구현할 수 있다.<br/>
+                            모달 레이어 팝업을 CSS로 구현할 수 있다.<br/>
+                            모달 레이어 팝업을 JavaScript로 구현할 수 있다.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
