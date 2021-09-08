@@ -1,0 +1,31 @@
+/* reset */
+* {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+a {text-decoration: none; color: #333;}
+li {list-style: none;}
+table {border-spacing: 0;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#wrap {width: 1200px; margin: 0 auto;}
+#side {width: 300px; float: left;}
+#content {width: 900px; float: left;}
+
+/* header */
+#side {text-align: center;}
+#side .logo {height: 150px; line-height: 150px; background: #aaa;}
+#side .nav {height: 700px; background: #bbb;}
+
+/* banner */
+#banner {float: left; text-align: center; width: 900px; background: #ccc; height: 450px; line-height: 450px;}
+
+/* contents */
+#contents {text-align: center;}
+#contents > div {float: left; width: 33.3333%; height: 300px; line-height: 300px;}
+#contents .cont1 {background: #999;}
+#contents .cont2 {background: #888;}
+#contents .cont3 {background: #777;}
+
+/* footer */
+#footer {text-align: center;}
+#footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; background: #666;}
+#footer .foot2 {float: left; width: 700px; height: 50px; line-height: 50px; background: #555;}
+#footer .foot3 {float: left; width: 700px; height: 50px; line-height: 50px; background: #444;}
