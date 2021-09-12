@@ -1,0 +1,36 @@
+/* reset */
+* {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+a {text-decoration: none; color: #333;}
+li {list-style: none;}
+table {border-spacing: 0;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#wrap {width: 1200px; margin: 0 auto;}
+
+/* header */
+#header {text-align: center;}
+#header .logo {float: left; width: 250px; height: 100px; line-height: 100px; background: #aaa;}
+/* menu */
+#header .nav {float: right; width: 600px; margin-top: 28px; background: #999;}
+#header .nav li {position: relative; float: left; width: 25%; text-align: center;}
+#header .nav li a {display: block; font-size: 20px; color: #fff; padding: 10px;}
+#header .nav li a:hover {background: rgb(0, 0, 0, 0.4);}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 44px; background: #bbb;}
+#header .nav li ul.submenu li {width: 100%; border-right: 0;}
+#header .nav li ul.submenu li a:hover {background: rgb(0, 0, 0, 0.4);}
+
+/* banner */
+#banner {text-align: center; height: 400px; line-height: 400px; background: #888;}
+
+/* conntents */
+#contents {text-align: center;}
+#contents > div {float: left; width: 33.33333%; height: 247px; line-height: 247px;}
+#contents .cont1 {background: #777;}
+#contents .cont2 {background: #666;}
+#contents .cont3 {background: #555;}
+
+/* footer */
+#footer {text-align: center;}
+#footer .foot1 {width: 200px; height: 100px; line-height: 100px; float: left; background: #444;}
+#footer .foot2 {width: 800px; height: 100px; line-height: 100px; float: left; background: #333;}
+#footer .foot3 {width: 200px; height: 100px; line-height: 100px; float: left; background: #222;}
