@@ -1,0 +1,36 @@
+ /* reset */
+ * {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+ a {text-decoration: none; color: #333;}
+ li {list-style: none;}
+ table {border-spacing: 0;}
+ .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+ #wrap {width: 1200px; margin: 0 auto;}
+ #side {float: left; width: 300px;}
+ #content {float: left; width: 900px;}
+
+ /* side */
+ #side {text-align: center;} 
+ #side .logo {height: 150px; line-height: 150px; background: #bbb;} 
+ #side .nav {width: 300px; height: 700px; background: #aaa;} 
+ #side .nav li {background: #555; text-align: center; position: relative;}
+ #side .nav li a {display: block; padding: 10px; color: #fff;}
+ #side .nav li a:hover {background: rgba(0, 0, 0, 0.2);}
+ #side .nav li ul.submenu {display: none; position: absolute; right: -200px; top: 0; width: 200px;}
+ #side .nav li ul.submenu li a:hover {background: rgba(0, 0, 0, 0.2);}
+
+ /* banner */
+ #banner {text-align: center; width: 900px; height: 450px; line-height: 450px; background: #999;}
+
+ /* ccontents */
+ #contents {text-align: center;}
+ #contents > div {float: left; width: 33.3333%; height: 300px; line-height: 300px;}
+ #contents > div.cont1 {background: #888;}
+ #contents > div.cont2 {background: #777;}
+ #contents > div.cont3 {background: #666;}
+
+ /* footer */
+ #footer {text-align: center;}
+ #footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; background: #555;}
+ #footer .foot2 {float: left; width: 700px; height: 50px; line-height: 50px; background: #444;}
+ #footer .foot3 {float: left; width: 700px; height: 50px; line-height: 50px; background: #333;}

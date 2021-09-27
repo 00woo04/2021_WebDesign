@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2021. 09. 28.</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <div id="wrap">
+        <aside id="side">
+            <h1 class="logo">Logo</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Menu-1</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu-2</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu-3</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu-4</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section id="content">
+            <section id="banner">
+                <h2>Image Slide</h2>
+            </section>
+
+            <section id="contents" class="clearfix">
+                <div class="cont1">
+                    <h3>Notice</h3>
+                </div>
+                <div class="cont2">
+                    <h3>Gallery</h3>
+                </div>
+                <div class="cont3">
+                    <h3>Popup</h3>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <div class="foot1">
+                    <h3>Logo</h3>
+                </div>
+                <div class="foot2">
+                    <h3>Copyright</h3>
+                </div>
+                <div class="foot3">
+                    <h3>SNS</h3>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").hover(
+            function(){
+                $(this).find(".submenu").stop().slideDown();
+            }, function(){
+                $(this).find(".submenu").stop().slideUp();
+            });
+    </script>
+</body>
+</html>
