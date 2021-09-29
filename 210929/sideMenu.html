@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2021. 09. 29.</title>
+
+    <!-- style -->
+    <style>
+        /* reset */
+        * {margin: 0; padding: 0; font-size: 22px; font-weight: bold; color: #fff;}
+        a {text-decoration: none; color: #333;}
+        li {list-style: none;}
+        table {border-spacing: 0;}
+        .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+        
+        #wrap {width: 1200px; margin: 0 auto;}
+        #side {width: 300px; float: left;}
+        #content {width: 900px; float: left;}
+
+        /* aside */
+        #side {text-align: center;}
+        #side .logo {height: 150px; line-height: 150px; background: #aaa;}
+        #side .nav {height: 700px; background: #999;}
+        #side .nav li {text-align: center; position: relative; background: #555;}
+        #side .nav li a {padding: 10px; display: block; color: #fff;}
+        #side .nav li a:hover {background: rgba(0, 0, 0, 0.3);}
+        #side .nav li ul.submenu {display: none; position: absolute; right: -200px; top: 0; width: 200px; background: #666;}
+        #side .nav li ul.submenu li a:hover {background: rgba(0, 0, 0, 0.3);}
+
+        /* banner */
+        #banner {text-align: center; width: 900px; height: 450px; line-height: 450px; background: #888;}
+
+        /* contents */
+        #contents {text-align: center;}
+        #contents > div {width: 33.3333%; float: left; height: 300px; line-height: 300px;}
+        #contents > div.cont1 {background: #777;}
+        #contents > div.cont2 {background: #666;}
+        #contents > div.cont3 {background: #555;}
+
+        /* footer */
+        #footer {text-align: center;}
+        #footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; background: #444;}
+        #footer .foot2 {float: left; width: 700px; height: 50px; line-height: 50px; background: #333;}
+        #footer .foot3 {float: left; width: 700px; height: 50px; line-height: 50px; background: #222;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="side">
+            <h1 class="logo">Logo</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Menu1</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu2</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu3</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu4</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+        </aside>
+        <!-- aside -->
+
+        <section id="content">
+            <section id="banner">
+                <h2>Image Slide</h2>
+            </section>
+            <!-- banner -->
+
+            <section id="contents" class="clearfix">
+                <div class="cont1">
+                    <h3>Notice</h3>
+                </div>
+                <div class="cont2">
+                    <h3>Gallery</h3>
+                </div>
+                <div class="cont3">
+                    <h3>SNS</h3>
+                </div>
+            </section>
+            <!-- contents -->
+
+            <footer id="footer">
+                <div class="foot1">
+                    <h3>Logo</h3>
+                </div>
+                <div class="foot2">
+                    <h3>Copyright</h3>
+                </div>
+                <div class="foot3">
+                    <h3>SNS</h3>
+                </div>
+            </footer>
+            <!-- footer -->
+        </section>
+    </div>
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").mouseover(function(){
+            $(this).find(".submenu").stop().slideDown();
+        });
+        $(".nav > ul > li").mouseout(function(){
+            $(this).find(".submenu").stop().slideUp();
+        });
+    </script>
+</body>
+</html>
