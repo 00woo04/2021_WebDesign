@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2021. 10. 01. (좌우 전환)</title>
+
+    <!-- style -->
+    <style>
+        /* reset */
+        * {margin: 0; padding: 0; font-size: 24px; font-weight: bold; color: #fff;}
+        a {text-decoration: none; color: #333;}
+        li {list-style: none;}
+        table {border-spacing: 0;}
+        .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+        #wrap {width: 1200px; margin: 0 auto;}
+
+        /* header */
+        #header {text-align: center;}
+        #header .logo {width: 250px; height: 100px; line-height: 100px; float: left; background: #aaa;}
+        #header .nav {width: 950px; height: 100px; line-height: 100px; float: left; background: #999;}
+
+        /* banner */
+        #banner {width: 1200px; text-align: center; height: 360px; overflow: hidden;}
+
+        /* slideList */
+        .slideList {position: relative; width: 1200px; height: 360px;}
+        .slideList .slideImg {position: relative;}
+        .slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
+        .slideList .slideImg img {display: block;}
+
+        /* contents */
+        #contents {text-align: center;}
+        #contents > div {float: left; width: 33.3333%; height: 247px; line-height: 247px;}
+        #contents > div.cont1 {background: #777;}
+        #contents > div.cont2 {background: #666;}
+        #contents > div.cont3 {background: #555;}
+
+        /* footer */
+        #footer {text-align: center;}
+        #footer .foot1 {float: left; width: 200px; height: 100px; line-height: 100px; background: #444;}
+        #footer .foot2 {float: left; width: 800px; height: 100px; line-height: 100px; background: #333;}
+        #footer .foot3 {float: left; width: 200px; height: 100px; line-height: 100px; background: #222;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="cleafix">
+            <h1 class="logo">Logo</h1>
+            <nav class="nav">Menu</nav>
+        </header>
+
+        <section id="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <h2>Image-1</h2>
+                    <img src="./images/21002김영우 - ban01.jpg" alt="1">
+                </div>
+                <div class="slideImg">
+                    <h2>Image-2</h2>
+                    <img src="./images/21002김영우 - ban02.jpg" alt="2">
+                </div>
+                <div class="slideImg">
+                    <h2>Image-3</h2>
+                    <img src="./images/21002김영우 - ban03.jpg" alt="3">
+                </div>
+            </div>
+        </section>
+
+        <section id="contents" class="clearfix">
+            <div class="cont1">
+                <h3>Notice</h3>
+            </div>
+            <div class="cont2">
+                <h3>Gallery</h3>
+            </div>
+            <div class="cont3">
+                <h3>Popup</h3>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="foot1">
+                <h3>Logo</h3>
+            </div>
+            <div class="foot2">
+                <h3>Copyright</h3>
+            </div>
+            <div class="foot3">
+                <h3>SNS</h3>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        var slideCount = $(".slideImg").length;
+        var currentIndex = 0;
+        var slidePosition;
+
+        setInterval(function(){
+            if(currentIndex < slideCount - 1){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            slidePosition = currentIndex * (-1200)+"px";
+            $(".slideList").animate({ left: slidePosition},400);
+        },3000);
+    </script>
+</body>
+</html>
