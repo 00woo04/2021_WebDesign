@@ -21,13 +21,17 @@
         #header .nav {width: 950px; height: 100px; line-height: 100px; float: left; background: #999;}
 
         /* banner */
-        #banner {width: 1200px; text-align: center; height: 360px; overflow: hidden;}
+        #banner {width: 1200px; margin: 0 auto; text-align: center; height: 360px; position: relative; overflow: hidden;}
+        #banner img {width: 100%; display: block;}
+        #banner h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 
+            z-index: 10; background: rgba(255,255,255,0.5); border-radius: 25px; padding: 10px 30px;}
 
         /* slideList */
-        .slideList {position: relative; width: 1200px; height: 360px;}
-        .slideList .slideImg {position: relative;}
-        .slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
-        .slideList .slideImg img {display: block;}
+        .slider {position: relative;}
+        .slider > div {position: absolute; left: 0; top: 0;}
+        .slider > div img {width: 100%;}
+        .slideList {position: relative; width: 3600px; height: 360px;}
+        .slideList .slideImg {float: left; width: 1200px; height: 360px;}
 
         /* contents */
         #contents {text-align: center;}
@@ -51,17 +55,15 @@
         </header>
 
         <section id="banner">
+            <h2>Image</h2>
             <div class="slideList">
                 <div class="slideImg">
-                    <h2>Image-1</h2>
                     <img src="./images/21002김영우 - ban01.jpg" alt="1">
                 </div>
                 <div class="slideImg">
-                    <h2>Image-2</h2>
                     <img src="./images/21002김영우 - ban02.jpg" alt="2">
                 </div>
                 <div class="slideImg">
-                    <h2>Image-3</h2>
                     <img src="./images/21002김영우 - ban03.jpg" alt="3">
                 </div>
             </div>
